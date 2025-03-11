@@ -1,0 +1,159 @@
+/* Reset all margins, paddings, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for index.html (Birthday Wish Page) */
+body.index-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #2c1f33, #feb47b); /* Gradient background */
+    background-size: 400% 400%;
+    animation: gradientBGIndex 10s ease infinite;
+    overflow: hidden;
+    color: white;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    animation: fadeInIndex 2s ease-in-out;
+}
+
+/* Message Styling for the index page */
+.message {
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Main heading styling for index page */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    animation: bounceIndex 1s ease-in-out infinite; /* Bouncing animation */
+}
+
+/* Button styles */
+.go-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #FF69B4; /* Hot pink */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+.go-button:hover {
+    background-color: #FF1493;
+    transform: scale(1.1);
+}
+
+/* Bounce effect for index page */
+@keyframes bounceIndex {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+/* Background Gradient Animation for index page */
+@keyframes gradientBGIndex {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Fade-in animation for the index page */
+@keyframes fadeInIndex {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Floating hearts */
+.heart {
+    position: absolute;
+    font-size: 2rem;
+    color: #FF1493;
+    animation: floatUp 3s ease-in-out infinite;
+    opacity: 0;
+}
+
+/* Animation for hearts floating upwards */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+/* Body styling for special_message.html (Special Message Page) */
+body.special-message-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to top, #232931, #7e8f97); /* Light blue gradient */
+    background-size: 400% 400%;
+    animation: gradientBGSpecial 12s ease infinite;
+    overflow: hidden;
+    color: white;
+}
+
+/* Message Styling for the special message page */
+.message {
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    animation: fadeInSpecial 2s ease-in-out;
+}
+
+/* Main heading styling for special message */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    animation: bounceInSpecial 1.5s ease-in-out, rotateInSpecial 1.5s ease-out;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Bounce-in effect for special message */
+@keyframes bounceInSpecial {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100% {
